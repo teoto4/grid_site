@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/reality-hyper');
+
+:root{
+    --main-font: font-family: "Darker Grotesque", sans-serif;
+    --secondary-font:"Poppins", sans-serif; 
+    --logo-font: "Reality Hyper", sans-serif;
+}
+
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: minmax(80px, auto) minmax(820px, 5fr) minmax(453px, auto);
+}
+
+.header{
+    background-color: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_icon svg{
+    width: 24px;
+    height: 24px;
+    fill: white;
+    cursor: pointer;
+}
+
+.header_icon {
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    justify-self: end;
+}
+
+.nav {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.main_baner{
+    background-color: #1B1A1F;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 0;
+    gap: 40px;
+}
+
+
+
+
+/* baner content grid star */
+    .baner_content_box{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas:
+        "baner_icon logo_text1"
+        "baner_icon logo_text2"
+        "baner_icon baner_desc"
+        "baner_icon baner_btn"
+        "baner_icon iframe"
+        ;
+    }
+
+    .logo_text1{
+        grid-area: logo_text1;
+        font-family: var(--main-font);
+        font-size: 105px;
+    }
+
+    .logo_text2{
+        display: grid;
+        grid-area: logo_text2;
+        font-family: var(--main-font);
+        font-size: 50px;
+        justify-content: end;
+        align-items: start;
+    }
+
+    .baner_desc{
+        grid-area: baner_desc;
+        font-size: 22px;
+        font-family: var(--main-font);
+        max-width: 388px;
+        font-weight: 100;
+    }
+
+    .baner_btn{
+        display: flex;
+        grid-area: baner_btn;
+        background-color: #EB4C56;
+        padding: 12px 32px;
+        max-width: 30%;
+        font-family: var(--secondary-font);
+        font-size: 16px;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe{
+        grid-area: iframe;
+        align-self: center;
+    }
+
+    .baner_icon{
+    display: flex;
+    flex-direction: column;
+    grid-area: baner_icon;
+    align-items: center;
+    justify-content: end;
+    gap: 24px;
+    }
+
+    .baner_icon svg{
+        fill: white;
+        width: 20px;
+        height: 20px;
+    }
+/* baner content grid end */

@@ -1,0 +1,71 @@
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-Vector {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-Path {
+  width: 32px;
+  height: 32px;
+  background-position: -32px 0;
+}
+.icon-Vector1 {
+  width: 26px;
+  height: 32px;
+  background-position: -64px 0;
+}
+.icon-Vector2 {
+  width: 29px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.icon-user {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -32px;
+}
+.icon-search {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -32px;
+}
+.icon-arrow-up-right2 {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -32px;
+}
+.icon-google {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -32px;
+}
+.icon-instagram {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -32px;
+}
+.icon-twitter {
+  width: 32px;
+  height: 32px;
+  background-position: -160px -32px;
+}
+.icon-youtube {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -32px;
+}
+.icon-dribbble {
+  width: 32px;
+  height: 32px;
+  background-position: -224px -32px;
+}
+.icon-linkedin {
+  width: 32px;
+  height: 32px;
+  background-position: -256px -32px;
+}
+
