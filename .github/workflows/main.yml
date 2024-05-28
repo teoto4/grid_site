@@ -1,0 +1,21 @@
+  name: Deploy to the host
+
+  on: 
+    push:
+      branches:
+        - main
+  jobs:
+    deploy:
+      runs-on: ubuntu-latetst
+
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+            
+        - name: Upload to FTP
+          uses: SamKirkLand/FTP-Deploy_Action@4.1.0
+          with:
+            ftp_sever: ftpupload.net
+            ftp_username: if0_36632231
+            ftp_password: zqJ09YIMe3I
+            local-dir: "/"
